@@ -3,3 +3,7 @@
     --ucll-title-color: #003469;
     --ucll-div-color: #f2fafe;
   }
+
+  header {
+    background-color: var(--ucll-color);
+  }
