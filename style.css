@@ -169,4 +169,12 @@ footer .copyright-footer a {
 	main {
 		padding-top: 125px;
 	}
+
+	
+}
+
+article img {
+	width: 500px;
+	height: 250px;
+	object-fit: cover;
 }
