@@ -34,6 +34,7 @@ header #nav-background {
 	height: 200px;
 	top: 0;
 	z-index: -1;
+	pointer-events: none;
 }
 
 header .logo {
@@ -53,7 +54,7 @@ header nav {
 }
 
 header nav a {
-	color: white;
+	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 26px;
@@ -61,16 +62,21 @@ header nav a {
 }
 
 header nav a:hover {
-	text-decoration: underline;
+	color: white;
 }
 
 header nav a:first-child {
 	margin-left: 0;
 }
 
+header nav .current-page {
+	color: white;
+}
+
 main {
 	padding-top: 200px;
 	padding-bottom: 90px;
+	color: var(--ucll-title-color);
 }
 
 main::selection {
