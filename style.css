@@ -53,6 +53,10 @@ header nav a {
 	margin-left: 50px;
 }
 
+header nav a:hover {
+	text-decoration: underline;
+}
+
 header nav a:first-child {
 	margin-left: 0;
 }
@@ -83,7 +87,11 @@ footer .top-footer p {
 footer .top-footer a i {
 	font-size: 30px;
 	margin: 0 15px;
-	color: black;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+footer .top-footer a i:hover {
+	color: white;
 }
 
 footer .copyright-footer {
@@ -117,6 +125,12 @@ footer .copyright-footer a {
 
 	header nav a {
 		margin-left: 0;
+	}
+
+	footer .top-footer {
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 10px;
 	}
 }
 
