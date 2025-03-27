@@ -82,7 +82,7 @@ footer {
 	background: linear-gradient(to right, var(--ucll-color), var(--ucll-color), #002757);
 	position: fixed;
 	bottom: 0;
-	width: 100vw;
+	width: 100%;
 }
 
 footer::selection {
