@@ -10,7 +10,9 @@
 
 body {
 	min-height: 100vh;
-	background: linear-gradient(to top, #9fdaf9, #fdfeff);
+	background-image: url('Images/background-gradient.png');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
@@ -19,6 +21,11 @@ header {
 	justify-content: space-between;
 	position: fixed;
 	width: 100%;
+}
+
+header::selection {
+	color: var(--ucll-color);
+	background-color: var(--ucll-div-color);
 }
 
 header #nav-background {
@@ -66,11 +73,21 @@ main {
 	padding-bottom: 90px;
 }
 
+main::selection {
+	color: var(--ucll-div-color);
+	background-color: var(--ucll-color);
+}
+
 footer {
 	background: linear-gradient(to right, var(--ucll-color), var(--ucll-color), #002757);
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
+}
+
+footer::selection {
+	color: var(--ucll-color);
+	background-color: var(--ucll-div-color);
 }
 
 footer .top-footer {
