@@ -75,6 +75,7 @@ header nav .current-page {
 main {
 	padding-top: 200px;
 	padding-bottom: 90px;
+	color: var(--ucll-title-color);
 }
 
 main::selection {
