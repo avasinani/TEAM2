@@ -10,7 +10,9 @@
 
 body {
 	min-height: 100vh;
-	background: linear-gradient(to top, #9fdaf9, #fdfeff);
+	background-image: url('Images/background-gradient.png');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
@@ -21,16 +23,21 @@ header {
 	width: 100%;
 }
 
+header::selection {
+	color: var(--ucll-color);
+	background-color: var(--ucll-div-color);
+}
+
 header #nav-background {
 	position: fixed;
 	width: 100vw;
-	height: 250px;
+	height: 200px;
 	top: 0;
 	z-index: -1;
 }
 
 header .logo {
-	height: 100px;
+	height: 75px;
 	padding: 25px;
 }
 
@@ -62,7 +69,13 @@ header nav a:first-child {
 }
 
 main {
-	padding-top: 250px;
+	padding-top: 200px;
+	padding-bottom: 90px;
+}
+
+main::selection {
+	color: var(--ucll-div-color);
+	background-color: var(--ucll-color);
 }
 
 footer {
@@ -72,11 +85,16 @@ footer {
 	width: 100vw;
 }
 
+footer::selection {
+	color: var(--ucll-color);
+	background-color: var(--ucll-div-color);
+}
+
 footer .top-footer {
 	display: flex;
 	align-items: center;
 	justify-content: end;
-	padding-top: 100px;
+	height: 80px;
 }
 
 footer .top-footer p {
@@ -113,7 +131,7 @@ footer .copyright-footer a {
 	}
 
 	header .logo {
-		height: 75px;
+		height: 50px;
 	}
 
 	header nav {
@@ -127,10 +145,14 @@ footer .copyright-footer a {
 		margin-left: 0;
 	}
 
+	main {
+		padding-bottom: 110px;
+	}
+
 	footer .top-footer {
 		flex-direction: column;
-		padding-top: 0;
 		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 }
 
