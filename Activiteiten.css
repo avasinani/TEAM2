@@ -31,6 +31,20 @@ article:hover {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.activity-gif {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.activity-gif:hover {
+  transform: scale(1.05);
+}
+
 h1 {
   color: var(--ucll-title-color);
   font-size: 60px;
