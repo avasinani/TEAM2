@@ -64,7 +64,7 @@ header nav a:first-child {
 }
 
 header nav .current-page {
-	color: white;
+  color: white;
 }
 
 main {
@@ -79,9 +79,9 @@ footer {
     var(--ucll-color),
     #002757
   );
-  position: fixed;
+
   bottom: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 footer .top-footer {
@@ -194,15 +194,13 @@ footer .copyright-footer a {
 }
 
 main {
-	padding-top: 125px;
+  padding-top: 125px;
 }
 
-	
-
 article img {
-	width: 500px;
-	height: 250px;
-	object-fit: cover;
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
 }
 .divmain_box_text::before {
   opacity: 1;
