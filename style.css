@@ -10,7 +10,9 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to top, #9fdaf9, #fdfeff);
+  background-image: url(Images/background-gradient.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
