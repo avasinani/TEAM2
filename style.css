@@ -29,6 +29,7 @@ header #nav-background {
   height: 200px;
   top: 0;
   z-index: -11;
+  margin: -5px;
 }
 
 header .logo {
@@ -45,6 +46,7 @@ header i {
 
 header nav {
   margin-right: 10vw;
+  margin-bottom: 35px;
 }
 
 header nav a {
@@ -70,6 +72,7 @@ header nav .current-page {
 main {
   padding-top: 200px;
   padding-bottom: 90px;
+  min-height: 50vh;
 }
 
 footer {
@@ -200,5 +203,3 @@ main {
 .divmain_box_text::before {
   opacity: 1;
 }
-
-
