@@ -1,82 +1,81 @@
 @import url("style.css");
 
 h1 {
-    color: var(--ucll-title-color);
-    font-size: 60px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+  color: var(--ucll-title-color);
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    padding-top: 200px;
-    margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 200px;
+  margin-bottom: 150px;
 }
 
 article {
-    background-color: white;
-    border: 3px solid var(--ucll-title-color);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 15px;
-    max-width: 400px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: var(--ucll-div-color);
+  background-color: white;
+  border: 3px solid var(--ucll-title-color);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px;
+  max-width: 400px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--ucll-div-color);
 }
 
 article:hover {
-   /* transform: scale(1.08);*/
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  /* transform: scale(1.08);*/
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: var(--ucll-title-color);
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-weight: bold;
+  color: var(--ucll-title-color);
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
-    max-width: 90%;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 90%;
 }
 
 @media (max-width: 900px) {
-    
-    article {
-        max-width: 90%;
-    }
+  article {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
-    article {
-        padding: 25px;
-        margin: 15px;
-    }
+  article {
+    padding: 25px;
+    margin: 15px;
+  }
 
-    h2 {
-        font-size: 24px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    p {
-        font-size: 16px;
-    }
+  p {
+    font-size: 16px;
+  }
 }
 
 article img {
-    max-width: 350px;
-    height: 250px;
-    object-fit: cover;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
 }
