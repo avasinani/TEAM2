@@ -1,0 +1,9 @@
+@import url("style.css");
+
+h1 {
+    color: var(--ucll-title-color);
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
