@@ -23,26 +23,31 @@ const translations = {
     creative: "Creatief bezig zijn",
     creativeDesc:
       "Tekenen, schilderen, knutselen of zelfs schrijven kan een geweldige uitlaatklep zijn voor stress. Het helpt je gedachten te verzetten en je creativiteit te stimuleren.",
+
+
     // Study tips page
-    studyTipsTitle: "Taloze studietips om te slagen!",
+    studyTipsTitle: "Studietips die écht werken!",
     planning: "Maak een planning",
     planningDesc:
-      "Voorkom last-minute stress met een realistisch schema. Verdeel grote taken in kleinere stukken en stel prioriteiten. Gebruik een planner of app om je vooruitgang bij te houden. Plan ook tijd in voor herhaling.",
+      'Voorkom last-minute stress met een haalbaar studieschema. Splits grote opdrachten op in kleinere taken en stel duidelijke prioriteiten. Houd je voortgang bij met een planner of app, zoals <a href="https://tasks.office.com" target="_blank" rel="noopener noreferrer">Microsoft Planner</a> binnen Microsoft 365. Voor studenten is dit extra handig, want je krijgt vaak gratis toegang tot Microsoft 365 via je school. Vergeet niet om ook tijd in te plannen voor herhaling.',
     activeLearning: "Gebruik actieve leermethoden",
     activeLearningDesc:
-      "Leer effectiever door samenvattingen, mindmaps of oefenvragen. Leg de stof uit aan iemand anders om je begrip te verdiepen. Actief bezig zijn helpt bij beter onthouden.",
+       'Leer effectiever door samenvattingen, mindmaps of oefenvragen. Een handige online tool voor mindmaps is <a href="https://www.mural.co" target="_blank" rel="noopener noreferrer">Mural.co</a>. Leg de stof uit aan iemand anders om je begrip te verdiepen. Actief bezig zijn helpt bij beter onthouden.',
     regularBreaks: "Neem regelmatig pauzes",
     regularBreaksDesc:
-      "Studeren zonder pauzes verlaagt je concentratie. Gebruik de Pomodoro-techniek: 25 minuten studeren, 5 minuten pauze. Na vier sessies neem je een langere pauze. Dit voorkomt mentale vermoeidheid.",
+    'Studeren zonder pauzes verlaagt je concentratie. Gebruik de Pomodoro-techniek: 25 minuten studeren, 5 minuten pauze. Na vier sessies neem je een langere pauze. Dit voorkomt mentale vermoeidheid. Op onze website vind je een handige timer om je hierbij te helpen – je vindt die via de navigatiebalk, de homepagina of direct via <a href="timer.html">deze timerpagina</a>.',
     quietEnvironment: "Zorg voor een rustige studieomgeving",
     quietEnvironmentDesc:
-      "Vermijd afleidingen zoals je telefoon of lawaai en zorg voor een opgeruimde werkplek. Een rustige omgeving helpt je om beter gefocust te blijven.",
+    'Vermijd afleidingen zoals je telefoon of lawaai en zorg voor een opgeruimde werkplek. Een rustige omgeving helpt je om beter gefocust te blijven. UCLL biedt ook stille bloklocaties aan – ontdek waar je in alle rust kunt studeren via <a href="https://www.ucll.be/nl/ucllblokt" target="_blank" rel="noopener noreferrer">deze pagina</a>.',
     testYourself: "Test jezelf regelmatig",
     testYourselfDesc:
-      "Maak oefenvragen of gebruik flashcards om je kennis te testen. Dit helpt je om zwakke plekken te identificeren en beter voorbereid te zijn op examens.",
+    'Maak oefenvragen of gebruik flashcards om je kennis te testen. Dit helpt je om zwakke plekken te identificeren en beter voorbereid te zijn op examens. Met tools zoals <a href="https://quizlet.com/nl" target="_blank" rel="noopener noreferrer">Quizlet</a> kun je eenvoudig zelf digitale flashcards maken.',
     useAgenda: "Gebruik een agenda",
     useAgendaDesc:
       "De belangrijkste tip van allemaal: gebruik een agenda! Het maakt niet uit of het een papieren of digitale agenda is. Plan je colleges en werkgroepen erin, je sociale activiteiten en sport, je deadlines. Als je alle activiteiten erin zet krijg je een goed overzicht. Dat geeft rust in je hoofd en je bent je er sneller van bewust wanneer je echt moet beginnen met studeren, schrijven, etc. Als je de agenda ook voor de leuke activiteiten gebruikt wordt je agenda ook wat minder snel negatief beladen.",
+    useFood: "Gezonde voeding en voldoende water",
+    useFoodDesc:
+    'Het kan misschien aantrekkelijk lijken om een maaltijd te maken in de microgolf als je niet veel tijd hebt, maar doe dit niet! Het is bewezen dat gezond eten ervoor zorgt dat je beter kan studeren. Maak dus een gezonde maaltijd met veel groenten en eet wat fruit in plaats van snoep. Inspiratie nodig? Bekijk deze <a href="https://deltaworx.eu/blog/2024/01/15/boost-je-studiedag-gezonde-en-snelle-recepten-voor-studenten/" target="_blank" rel="noopener noreferrer">gezonde en snelle recepten voor studente </a> voor makkelijke en voedzame maaltijden.',
     routine: "Routine is key",
     routineDesc:
       "Hoe duidelijker je wekelijkse routine is, hoe normaler het is om op bepaalde dagen en tijden te studeren. Dan hoef je niet steeds jezelf op wilskracht naar de bieb te slepen, maar kun je die energie gebruiken om daadwerkelijk te studeren. Probeer je studieritme aan te passen aan je bioritme: ben je een ochtend- of avondmens? Stem daar je studieplanning voor zover als mogelijk op af.",
@@ -138,27 +143,31 @@ const translations = {
     creative: "Being Creative",
     creativeDesc:
       "Drawing, painting, crafting, or even writing can be a great outlet for stress. It helps you take your mind off things and stimulates your creativity.",
+
+
     // Study tips page
-    studyTipsTitle: "Countless study tips to succeed!",
+    studyTipsTitle: "Study tips that really work!",
     planning: "Create a schedule",
     planningDesc:
-      "Prevent last-minute stress with a realistic schedule. Break large tasks into smaller pieces and set priorities. Use a planner or app to track your progress. Also plan time for review.",
-    activeLearning: "Use active learning methods",
-    activeLearningDesc:
-      "Learn more effectively through summaries, mind maps, or practice questions. Explain the material to someone else to deepen your understanding. Being actively engaged helps with better retention.",
+      'Avoid last-minute stress by creating a realistic study schedule. Break large assignments into smaller tasks and set clear priorities. Track your progress using a planner or app, such as <a href="https://tasks.office.com" target="_blank" rel="noopener noreferrer">Microsoft Planner</a> within Microsoft 365. This is especially useful for students, as many schools offer free access to Microsoft 365. Don’t forget to schedule time for review as well.',
+      activeLearningDesc:
+      'Learn more effectively by using summaries, mind maps, or practice questions. A great online tool for creating mind maps is <a href="https://www.mural.co" target="_blank" rel="noopener noreferrer">Mural.co</a>. Explain the material to someone else to deepen your understanding. Being actively engaged helps you remember better.',
     regularBreaks: "Take regular breaks",
     regularBreaksDesc:
-      "Studying without breaks lowers your concentration. Use the Pomodoro technique: 25 minutes of study, 5 minutes break. After four sessions, take a longer break. This prevents mental fatigue.",
+    'Studying without breaks lowers your concentration. Use the Pomodoro technique: 25 minutes of studying, followed by a 5-minute break. After four sessions, take a longer break. This helps prevent mental fatigue. You can find a helpful timer on our website – it\'s available through the navigation bar, the homepage, or directly via <a href="timer.html">this timer page</a>.',
     quietEnvironment: "Ensure a quiet study environment",
     quietEnvironmentDesc:
-      "Avoid distractions such as your phone or noise and keep your workspace tidy. A quiet environment helps you stay better focused.",
+    'Avoid distractions like your phone or background noise, and make sure your workspace is tidy. A quiet environment helps you stay more focused. UCLL also offers silent study locations – check out where you can study in peace via <a href="https://www.ucll.be/nl/ucllblokt" target="_blank" rel="noopener noreferrer">this page</a>.',
     testYourself: "Test yourself regularly",
     testYourselfDesc:
-      "Create practice questions or use flashcards to test your knowledge. This helps you identify weak areas and be better prepared for exams.",
+    'Create practice questions or use flashcards to test your knowledge. This helps you identify weak spots and be better prepared for exams. With tools like <a href="https://quizlet.com" target="_blank" rel="noopener noreferrer">Quizlet</a>, you can easily make your own digital flashcards.',
     useAgenda: "Use a planner",
     useAgendaDesc:
       "The most important tip of all: use a planner! It doesn't matter if it's a paper or digital planner. Schedule your classes and study groups, your social activities and sports, your deadlines. Putting all activities in it gives you a good overview. This brings peace of mind and makes you more aware of when you really need to start studying, writing, etc. If you also use the planner for fun activities, your planner will be less negatively associated.",
     routine: "Routine is key",
+    useFood: "Healthy food and enough water",
+    useFoodDesc:
+    'It might seem tempting to microwave a quick meal when you\'re short on time, but try to avoid it! Healthy eating has been proven to support better studying. So prepare a nutritious meal with plenty of vegetables and choose fruit instead of candy. Need inspiration? Check out these <a href="https://www.bbcgoodfood.com/recipes/collection/student-recipes" target="_blank" rel="noopener noreferrer">student-friendly recipes</a> for easy and healthy meals.',
     routineDesc:
       "The clearer your weekly routine is, the more normal it becomes to study on certain days and times. Then you don't have to drag yourself to the library on willpower alone, but you can use that energy to actually study. Try to adapt your study rhythm to your biorhythm: are you a morning or evening person? Align your study planning with that as much as possible.",
     studyTogether: "Study together",
