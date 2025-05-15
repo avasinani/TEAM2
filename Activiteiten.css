@@ -16,13 +16,13 @@ article {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   border-left: 3px solid transparent;
 }
 
 article:hover {
   border-left: 3px solid var(--ucll-color);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 article h2 {
@@ -54,7 +54,6 @@ article p {
     flex-direction: row;
     align-items: stretch;
     border-left: none;
-    border-bottom: 3px solid transparent;
   }
 
   article:hover {
@@ -77,10 +76,6 @@ article p {
     height: auto;
     max-height: none;
     object-fit: cover;
-  }
-
-  article h2 {
-    margin-bottom: 1rem;
   }
 }
 
