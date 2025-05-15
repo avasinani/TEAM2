@@ -1,7 +1,7 @@
 const translations = {
   nl: {
     studyTips: "Studie Tips",
-    relaxation: "Pauze & Ontspanning",
+    relaxation: "Pauze",
     timer: "Timer",
     contact: "Contact",
     welcome:
@@ -116,7 +116,7 @@ const translations = {
   },
   en: {
     studyTips: "Study Tips",
-    relaxation: "Break & Relaxation",
+    relaxation: "Break",
     timer: "Timer",
     contact: "Contact",
     welcome:

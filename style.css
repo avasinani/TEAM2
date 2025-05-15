@@ -498,6 +498,9 @@ main h1::after {
   .welcome-section h1 {
     font-size: 1.8rem;
   }
+  .feature-card {
+    min-height: 300px; /* Increase minimum height to accommodate longer text */
+  }
 
   .welcome-section p {
     font-size: 1.1rem;
