@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentBuddy &mdash; Contact</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Contact.css" />
+    <link
+      rel="icon"
+      href="https://play-lh.googleusercontent.com/boesRPJmAZ3vdnwJ8GoDeARfS8sNtlpauyf1ItY-476Vse3rq3WjCytPWeNMq8ut8p8"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="StudieTips.html" data-translate="studyTips">Studie Tips</a>
+          <a href="Activiteiten.html" data-translate="relaxation"
+            >Pauze &#38; Ontspanning</a
+          >
+          <a href="Timer.html" data-translate="timer">Timer</a>
+          <a class="current-page" href="Contact.html" data-translate="contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
+      <div class="nav-toggle-container">
+        <button class="lang-switch">NL</button>
+        <i class="bi bi-list"></i>
+      </div>
+    </header>
+    <main>
+      <div class="contact-container">
+        <h1 data-translate="contactHeading">Contact StudentBuddy</h1>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="info-text">
+                <h3 data-translate="address">Adres</h3>
+                <p>UCLL Campus Proximus</p>
+                <p>Geldenaaksebaan 335</p>
+                <p>3001 Heverlee</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h3 data-translate="email">E-mail</h3>
+                <p>
+                  <a href="mailto:studentbuddy@ucll.be">studentbuddy@ucll.be</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="info-text">
+                <h3 data-translate="phone">Telefoon</h3>
+                <p><a href="tel:+3216301030">+32 16 30 10 30</a></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="info-text">
+                <h3 data-translate="openingHours">Openingsuren</h3>
+                <p data-translate="weekdays">Maandag - Vrijdag: 8u30 - 17u00</p>
+                <p data-translate="weekend">Weekend: Gesloten</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2 data-translate="contactFormHeading">Stuur ons een bericht</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" data-translate="nameLabel">Naam</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-translate="emailLabel"
+                  >E-mailadres</label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-translate="subjectLabel"
+                  >Onderwerp</label
+                >
+                <select id="subject" name="subject" required>
+                  <option
+                    value=""
+                    disabled
+                    selected
+                    data-translate="selectSubject"
+                  >
+                    Selecteer een onderwerp
+                  </option>
+                  <option
+                    value="algemene-vraag"
+                    data-translate="generalQuestion"
+                  >
+                    Algemene vraag
+                  </option>
+                  <option
+                    value="studie-tips"
+                    data-translate="studyTipsQuestion"
+                  >
+                    Vraag over studie tips
+                  </option>
+                  <option
+                    value="technisch-probleem"
+                    data-translate="technicalIssue"
+                  >
+                    Technisch probleem
+                  </option>
+                  <option value="feedback" data-translate="feedback">
+                    Feedback
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-translate="messageLabel"
+                  >Bericht</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="submit-button"
+                data-translate="sendButton"
+              >
+                Verstuur
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="location-map">
+          <h2 data-translate="locationHeading">Onze locatie</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.6690997404066!2d4.695798676797053!3d50.8617030!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c16110ca33ecdd%3A0xb5da12e1bcbdee0b!2sUC%20Leuven-Limburg%20Campus%20Proximus!5e0!3m2!1snl!2sbe!4v1693486367148!5m2!1snl!2sbe"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <p data-translate="followUCLL">Volg &#35;UCLL op sociale media:</p>
+        <div class="social-media">
+          <a href="https://www.youtube.com/user/ucleuvenlimburg" target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/ucleuvenlimburg/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/hogeschoolUCLL" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://www.tiktok.com/@hogeschoolucll" target="_blank"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/school/uc-leuven-limburg"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/hogeschoolUCLL" target="_blank"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>&copy; UCLL &mdash; 2025</p>
+        <a href="#" target="_blank" data-translate="cookiePolicy"
+          >Cookiebeleid</a
+        >
+        <a href="#" target="_blank" data-translate="privacyPolicy"
+          >Privacyverklaring</a
+        >
+        <a href="#" target="_blank" data-translate="terms"
+          >Algemene voorwaarden</a
+        >
+      </div>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="Contact.js"></script>
+  </body>
+</html>

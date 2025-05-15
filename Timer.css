@@ -1,0 +1,192 @@
+@import url("style.css");
+
+/* Timer page styles */
+.timer-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.timer-container h1 {
+  color: var(--ucll-title-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.timer-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--ucll-color);
+}
+
+.timer-description {
+  background-color: var(--ucll-div-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid var(--ucll-color);
+  text-align: left;
+}
+
+.timer-description p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.timer-settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.setting {
+  background-color: var(--ucll-div-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 160px;
+}
+
+.setting label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--ucll-title-color);
+  font-weight: bold;
+}
+
+.setting input {
+  width: 80px;
+  padding: 0.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.setting input:focus {
+  border-color: var(--ucll-color);
+  outline: none;
+}
+
+.timer-display {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.timer-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.timer-time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--ucll-title-color);
+}
+
+.timer-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--ucll-color);
+}
+
+.timer-count {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.timer-button {
+  background-color: var(--ucll-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timer-button:hover {
+  background-color: var(--ucll-title-color);
+  transform: translateY(-2px);
+}
+
+.timer-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Timer states */
+.timer-work .timer-label {
+  color: var(--ucll-color);
+}
+
+.timer-short-break .timer-label {
+  color: #4caf50;
+}
+
+.timer-long-break .timer-label {
+  color: #2196f3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timer-settings {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .setting {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .timer-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .timer-time {
+    font-size: 2.8rem;
+  }
+
+  .timer-controls {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+
+  .timer-button {
+    width: 100%;
+  }
+}

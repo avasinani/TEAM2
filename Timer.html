@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentBuddy &mdash; Studie Timer</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Timer.css" />
+    <link
+      rel="icon"
+      href="https://play-lh.googleusercontent.com/boesRPJmAZ3vdnwJ8GoDeARfS8sNtlpauyf1ItY-476Vse3rq3WjCytPWeNMq8ut8p8"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="StudieTips.html" data-translate="studyTips">Studie Tips</a>
+          <a href="Activiteiten.html" data-translate="relaxation"
+            >Pauze &#38; Ontspanning</a
+          >
+          <a class="current-page" href="Timer.html" data-translate="timer"
+            >Timer</a
+          >
+          <a href="Contact.html" data-translate="contact">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-toggle-container">
+        <button class="lang-switch">NL</button>
+        <i class="bi bi-list"></i>
+      </div>
+    </header>
+    <main>
+      <div class="timer-container">
+        <h1 data-translate="timerHeading">Pomodoro Studie Timer</h1>
+
+        <div class="timer-description">
+          <p data-translate="timerDescription">
+            De Pomodoro-techniek is een tijdmanagementmethode die gebruik maakt
+            van een timer om werk op te delen in intervallen, meestal 25
+            minuten, gescheiden door korte pauzes. Deze methode helpt om je
+            focus te verbeteren en burn-out te voorkomen door regelmatig te
+            pauzeren.
+          </p>
+        </div>
+
+        <div class="timer-settings">
+          <div class="setting">
+            <label data-translate="workTime">Studietijd (min):</label>
+            <input type="number" id="work-time" min="1" max="60" value="25" />
+          </div>
+          <div class="setting">
+            <label data-translate="shortBreak">Korte pauze (min):</label>
+            <input type="number" id="short-break" min="1" max="30" value="5" />
+          </div>
+          <div class="setting">
+            <label data-translate="longBreak">Lange pauze (min):</label>
+            <input type="number" id="long-break" min="5" max="60" value="15" />
+          </div>
+          <div class="setting">
+            <label data-translate="longBreakInterval"
+              >Intervallen tot lange pauze:</label
+            >
+            <input
+              type="number"
+              id="long-break-interval"
+              min="1"
+              max="10"
+              value="4"
+            />
+          </div>
+        </div>
+
+        <div class="timer-display">
+          <div class="timer-circle">
+            <svg width="300" height="300" viewBox="0 0 300 300">
+              <circle
+                cx="150"
+                cy="150"
+                r="120"
+                fill="none"
+                stroke="#e6e6e6"
+                stroke-width="10"
+              />
+              <circle
+                cx="150"
+                cy="150"
+                r="120"
+                fill="none"
+                stroke="var(--ucll-color)"
+                stroke-width="10"
+                stroke-dasharray="753.6"
+                stroke-dashoffset="0"
+                id="timer-progress"
+                transform="rotate(-90 150 150)"
+              />
+            </svg>
+            <div class="timer-time" id="timer-time">25:00</div>
+          </div>
+          <div class="timer-label" id="timer-label" data-translate="studyPhase">
+            Studietijd
+          </div>
+          <div class="timer-count" id="timer-count">1/4</div>
+        </div>
+
+        <div class="timer-controls">
+          <button
+            id="timer-start"
+            class="timer-button"
+            data-translate="startTimer"
+          >
+            Start Timer
+          </button>
+          <button
+            id="timer-pause"
+            class="timer-button"
+            data-translate="pauseTimer"
+            disabled
+          >
+            Pauzeer Timer
+          </button>
+          <button
+            id="timer-reset"
+            class="timer-button"
+            data-translate="resetTimer"
+          >
+            Reset Timer
+          </button>
+          <button
+            id="timer-skip"
+            class="timer-button"
+            data-translate="skipPhase"
+          >
+            Volgende Fase
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <p data-translate="followUCLL">Volg &#35;UCLL op sociale media:</p>
+        <div class="social-media">
+          <a href="https://www.youtube.com/user/ucleuvenlimburg" target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/ucleuvenlimburg/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/hogeschoolUCLL" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://www.tiktok.com/@hogeschoolucll" target="_blank"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/school/uc-leuven-limburg"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/hogeschoolUCLL" target="_blank"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>&copy; UCLL &mdash; 2025</p>
+        <a href="#" target="_blank" data-translate="cookiePolicy"
+          >Cookiebeleid</a
+        >
+        <a href="#" target="_blank" data-translate="privacyPolicy"
+          >Privacyverklaring</a
+        >
+        <a href="#" target="_blank" data-translate="terms"
+          >Algemene voorwaarden</a
+        >
+      </div>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="Timer.js"></script>
+  </body>
+</html>

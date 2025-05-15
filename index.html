@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Home.css" />
     <link
       rel="icon"
       href="https://play-lh.googleusercontent.com/boesRPJmAZ3vdnwJ8GoDeARfS8sNtlpauyf1ItY-476Vse3rq3WjCytPWeNMq8ut8p8"
@@ -18,35 +19,117 @@
   </head>
   <body>
     <header>
-      <img src="Images/nav.png" id="nav-background" />
-      <a href="index.html"
-        ><img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo"
-      /></a>
-      <i class="bi bi-list"></i>
-      <nav class="visible hidden">
-        <a class="current-page" href="index.html">Home</a>
-        <a href="StudieTips.html">Studie Tips</a>
-        <a href="Activiteiten.html">Pauze &#38; Ontspanning</a>
-      </nav>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <a class="current-page" href="index.html">Home</a>
+          <a href="StudieTips.html" data-translate="studyTips">Studie Tips</a>
+          <a href="Activiteiten.html" data-translate="relaxation"
+            >Pauze &#38; Ontspanning</a
+          >
+          <a href="Timer.html" data-translate="timer">Timer</a>
+          <a href="Contact.html" data-translate="contact">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-toggle-container">
+        <button class="lang-switch">NL</button>
+        <i class="bi bi-list"></i>
+      </div>
     </header>
     <main>
-      <div class="divmain_box">
-        <p class="divmain_box_text">
-          Welkom tot de StudentBuddy, je one-stop shop voor hulp bij je
-          studies!<br />
-          <br />
-          In de navigatiebar bovenaan kan je de volgende pagina’s vinden:<br /><br />
-          Studietips<br />Hier kan je verschillende handige tips vinden voor
-          efficiënter te studeren zoals het maken van een goede planning.<br /><br />
-          Pauze &#38; Ontspanning<br />Nood aan ontspanning na of tussen het
-          studeren door? Je vindt hier verschillende leuke activiteiten, zoals
-          een quiz en een leuke video voor je motivatie terug op te wekken.
-        </p>
+      <div class="home-container">
+        <div class="welcome-section">
+          <h1 data-translate="welcome">
+            Welkom tot de StudentBuddy, je one-stop shop voor hulp bij je
+            studies!
+          </h1>
+          <p data-translate="navInfo">
+            In de navigatiebar bovenaan kan je de volgende pagina's vinden:
+          </p>
+        </div>
+
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="card-header">
+              <i class="bi bi-book"></i>
+              <h2 data-translate="studyTips">Studie Tips</h2>
+            </div>
+            <div class="card-body">
+              <p data-translate="studyTipsDesc">
+                Hier kan je verschillende handige tips vinden voor efficiënter
+                te studeren zoals het maken van een goede planning.
+              </p>
+              <a
+                href="StudieTips.html"
+                class="card-btn"
+                data-translate="visitPage"
+                >Bekijk pagina</a
+              >
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-header">
+              <i class="bi bi-emoji-smile"></i>
+              <h2 data-translate="relaxation">Pauze &#38; Ontspanning</h2>
+            </div>
+            <div class="card-body">
+              <p data-translate="relaxationDesc">
+                Nood aan ontspanning na of tussen het studeren door? Je vindt
+                hier verschillende leuke activiteiten, zoals een quiz en een
+                leuke video voor je motivatie terug op te wekken.
+              </p>
+              <a
+                href="Activiteiten.html"
+                class="card-btn"
+                data-translate="visitPage"
+                >Bekijk pagina</a
+              >
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-header">
+              <i class="bi bi-clock"></i>
+              <h2 data-translate="timer">Timer</h2>
+            </div>
+            <div class="card-body">
+              <p data-translate="timerDescription">
+                De Pomodoro-techniek is een tijdmanagementmethode die gebruik
+                maakt van een timer om werk op te delen in intervallen, meestal
+                25 minuten, gescheiden door korte pauzes.
+              </p>
+              <a href="Timer.html" class="card-btn" data-translate="visitPage"
+                >Bekijk pagina</a
+              >
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-header">
+              <i class="bi bi-envelope"></i>
+              <h2 data-translate="contact">Contact</h2>
+            </div>
+            <div class="card-body">
+              <p data-translate="contactDesc">
+                Heb je vragen of suggesties? Neem contact met ons op via het
+                contactformulier.
+              </p>
+              <a href="Contact.html" class="card-btn" data-translate="visitPage"
+                >Bekijk pagina</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
       <div class="top-footer">
-        <p>Volg &#35;UCLL op sociale media:</p>
+        <p data-translate="followUCLL">Volg &#35;UCLL op sociale media:</p>
         <div class="social-media">
           <a href="https://www.youtube.com/user/ucleuvenlimburg" target="_blank"
             ><i class="bi bi-youtube"></i
@@ -72,11 +155,18 @@
       </div>
       <div class="copyright-footer">
         <p>&copy; UCLL &mdash; 2025</p>
-        <a href="#" target="_blank">Cookiebeleid</a>
-        <a href="#" target="_blank">Privacyverklaring</a>
-        <a href="#" target="_blank">Algemene voorwaarden</a>
+        <a href="#" target="_blank" data-translate="cookiePolicy"
+          >Cookiebeleid</a
+        >
+        <a href="#" target="_blank" data-translate="privacyPolicy"
+          >Privacyverklaring</a
+        >
+        <a href="#" target="_blank" data-translate="terms"
+          >Algemene voorwaarden</a
+        >
       </div>
     </footer>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

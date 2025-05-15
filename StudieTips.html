@@ -11,28 +11,42 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Studietips.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <img src="Images/nav.png" id="nav-background" />
-      <a href="index.html"
-        ><img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo"
-      /></a>
-      <i class="bi bi-list"></i>
-      <nav class="hidden">
-        <a href="index.html">Home</a>
-        <a class="current-page" href="StudieTips.html">Studie Tips</a>
-        <a href="Activiteiten.html">Pauze &#38; Ontspanning</a>
-      </nav>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="Images/StudentBuddy_Logo_Wit.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <a href="index.html">Home</a>
+          <a
+            class="current-page"
+            href="StudieTips.html"
+            data-translate="studyTips"
+            >Studie Tips</a
+          >
+          <a href="Activiteiten.html" data-translate="relaxation"
+            >Pauze &#38; Ontspanning</a
+          >
+          <a href="Timer.html" data-translate="timer">Timer</a>
+          <a href="Contact.html" data-translate="contact">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-toggle-container">
+        <button class="lang-switch">NL</button>
+        <i class="bi bi-list"></i>
+      </div>
     </header>
     <main>
-      <h1>Taloze studietips om te slagen!</h1>
+      <h1 data-translate="studyTipsTitle">Taloze studietips om te slagen!</h1>
       <section class="studietips">
         <article>
-          <h2>Maak een planning</h2>
+          <h2 data-translate="planning">Maak een planning</h2>
           <img src="images_studietips/planning.jpeg" alt="" />
-          <p>
+          <p data-translate="planningDesc">
             Voorkom last-minute stress met een realistisch schema. Verdeel grote
             taken in kleinere stukken en stel prioriteiten. Gebruik een planner
             of app om je vooruitgang bij te houden. Plan ook tijd in voor
@@ -40,18 +54,18 @@
           </p>
         </article>
         <article>
-          <h2>Gebruik actieve leermethoden</h2>
+          <h2 data-translate="activeLearning">Gebruik actieve leermethoden</h2>
           <img src="images_studietips/learn_methode.jpeg" alt="" />
-          <p>
+          <p data-translate="activeLearningDesc">
             Leer effectiever door samenvattingen, mindmaps of oefenvragen. Leg
             de stof uit aan iemand anders om je begrip te verdiepen. Actief
             bezig zijn helpt bij beter onthouden.
           </p>
         </article>
         <article>
-          <h2>Neem regelmatig pauzes</h2>
+          <h2 data-translate="regularBreaks">Neem regelmatig pauzes</h2>
           <img src="images_studietips/stretching.jpeg" alt="" />
-          <p>
+          <p data-translate="regularBreaksDesc">
             Studeren zonder pauzes verlaagt je concentratie. Gebruik de
             Pomodoro-techniek: 25 minuten studeren, 5 minuten pauze. Na vier
             sessies neem je een langere pauze. Dit voorkomt mentale
@@ -59,27 +73,29 @@
           </p>
         </article>
         <article>
-          <h2>Zorg voor een rustige studieomgeving</h2>
+          <h2 data-translate="quietEnvironment">
+            Zorg voor een rustige studieomgeving
+          </h2>
           <img src="images_studietips/study_environment.jpeg" alt="" />
-          <p>
+          <p data-translate="quietEnvironmentDesc">
             Vermijd afleidingen zoals je telefoon of lawaai en zorg voor een
             opgeruimde werkplek. Een rustige omgeving helpt je om beter gefocust
             te blijven.
           </p>
         </article>
         <article>
-          <h2>Test jezelf regelmatig</h2>
+          <h2 data-translate="testYourself">Test jezelf regelmatig</h2>
           <img src="images_studietips/test_yourself.jpeg" alt="" />
-          <p>
+          <p data-translate="testYourselfDesc">
             Maak oefenvragen of gebruik flashcards om je kennis te testen. Dit
             helpt je om zwakke plekken te identificeren en beter voorbereid te
             zijn op examens.
           </p>
         </article>
         <article>
-          <h2>Gebruik een agenda</h2>
+          <h2 data-translate="useAgenda">Gebruik een agenda</h2>
           <img src="images_studietips/agenda.jpeg" alt="" />
-          <p>
+          <p data-translate="useAgendaDesc">
             De belangrijkste tip van allemaal: gebruik een agenda! Het maakt
             niet uit of het een papieren of digitale agenda is. Plan je colleges
             en werkgroepen erin, je sociale activiteiten en sport, je deadlines.
@@ -91,9 +107,9 @@
           </p>
         </article>
         <article>
-          <h2>Routine is key</h2>
+          <h2 data-translate="routine">Routine is key</h2>
           <img src="images_studietips/routine.jpeg" alt="" />
-          <p>
+          <p data-translate="routineDesc">
             Hoe duidelijker je wekelijkse routine is, hoe normaler het is om op
             bepaalde dagen en tijden te studeren. Dan hoef je niet steeds jezelf
             op wilskracht naar de bieb te slepen, maar kun je die energie
@@ -103,9 +119,9 @@
           </p>
         </article>
         <article>
-          <h2>Studeer samen</h2>
+          <h2 data-translate="studyTogether">Studeer samen</h2>
           <img src="images_studietips/study_together.jpeg" alt="" />
-          <p>
+          <p data-translate="studyTogetherDesc">
             Het kan helpen om met iemand af te spreken om samen te studeren. Je
             vergroot de kans dat je daadwerkelijk gaat studeren, je houdt elkaar
             bij de les tijdens het studeren en het is gezelliger tijdens de
@@ -113,9 +129,9 @@
           </p>
         </article>
         <article>
-          <h2>Maak aantekeningen tijdens college</h2>
+          <h2 data-translate="takeNotes">Maak aantekeningen tijdens college</h2>
           <img src="images_studietips/school_notes.jpeg" alt="" />
-          <p>
+          <p data-translate="takeNotesDesc">
             Blijf tijdens colleges bij de les door aantekeningen te maken.
             Probeer de docent niet bij te houden en alles op te schrijven, maar
             maak bijvoorbeeld een mindmap. Als de docent de PowerPoint van
@@ -124,30 +140,37 @@
           </p>
         </article>
         <article>
-          <h2>Overhoor jezelf</h2>
+          <h2 data-translate="quizYourself">Overhoor jezelf</h2>
           <img src="images_studietips/interrogate_yourself.jpeg" alt="" />
-          <p>
+          <p data-translate="quizYourselfDesc">
             Door jezelf tijdens het studeren vragen te stellen neem je de stof
             makkelijker op. Bekijk bijvoorbeeld oude tentamens en bedenk tijdens
             het studeren soortgelijke vragen over de stof die je bestudeert.
           </p>
         </article>
         <article>
-          <h2>Als je er niet alleen uit komt, zoek dan hulp!</h2>
+          <h2 data-translate="askHelp">
+            Als je er niet alleen uit komt, zoek dan hulp!
+          </h2>
           <img src="images_studietips/ask_for_help.jpeg" alt="" />
           <p>
-            Er worden verschillende trainingen aangeboden voor mensen die moeite
-            hebben met studeren. Bekijk ons actuele aanbod van trainingen en
-            groepen. Als je twijfels hebt over je studiekeuze, je studieplanning
-            of andere studie-gerelateerde zaken kun je ook een afspraak met de
-            studieadviseur maken.
+            <span data-translate="askHelpDesc"
+              >Er worden verschillende trainingen aangeboden voor mensen die
+              moeite hebben met studeren. Bekijk ons actuele aanbod van
+              trainingen en groepen. Als je twijfels hebt over je studiekeuze,
+              je studieplanning of andere studie-gerelateerde zaken kun je ook
+              een afspraak met de studieadviseur maken.</span
+            >
             <a
               href="https://www.ucll.be/nl/studeren-aan-ucll/diensten-voor-studenten/begeleiding"
               target="_blank"
+              data-translate="clickHere"
               >Klik hier</a
             >
-            voor een overzicht van de contactgegevens van de studieadviseurs per
-            faculteit.
+            <span data-translate="contactInfo"
+              >voor een overzicht van de contactgegevens van de studieadviseurs
+              per faculteit.</span
+            >
           </p>
         </article>
         <!--
@@ -161,7 +184,7 @@
     </main>
     <footer>
       <div class="top-footer">
-        <p>Volg &#35;UCLL op sociale media:</p>
+        <p data-translate="followUCLL">Volg &#35;UCLL op sociale media:</p>
         <div class="social-media">
           <a href="https://www.youtube.com/user/ucleuvenlimburg" target="_blank"
             ><i class="bi bi-youtube"></i
@@ -187,10 +210,18 @@
       </div>
       <div class="copyright-footer">
         <p>&copy; UCLL &mdash; 2025</p>
-        <a href="#" target="_blank">Cookiebeleid</a>
-        <a href="#" target="_blank">Privacyverklaring</a>
-        <a href="#" target="_blank">Algemene voorwaarden</a>
+        <a href="#" target="_blank" data-translate="cookiePolicy"
+          >Cookiebeleid</a
+        >
+        <a href="#" target="_blank" data-translate="privacyPolicy"
+          >Privacyverklaring</a
+        >
+        <a href="#" target="_blank" data-translate="terms"
+          >Algemene voorwaarden</a
+        >
       </div>
     </footer>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
