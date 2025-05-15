@@ -2,6 +2,7 @@ const translations = {
   nl: {
     studyTips: "Studie Tips",
     relaxation: "Pauze & Ontspanning",
+    relaxation1: "Pauze",
     timer: "Timer",
     contact: "Contact",
     welcome:
@@ -118,10 +119,13 @@ const translations = {
     locationHeading: "Onze locatie",
     successMessage:
       "Bericht succesvol verzonden. We nemen zo snel mogelijk contact met je op!",
+    // Login related
+    connect: "Verbinden",
   },
   en: {
     studyTips: "Study Tips",
     relaxation: "Break & Relaxation",
+    relaxation1: "Break",
     timer: "Timer",
     contact: "Contact",
     welcome:
@@ -237,5 +241,7 @@ const translations = {
     locationHeading: "Our location",
     successMessage:
       "Message sent successfully. We will contact you as soon as possible!",
+    // Login related
+    connect: "Connect",
   },
 };

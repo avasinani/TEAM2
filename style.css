@@ -49,6 +49,7 @@ header .nav-container {
 header .nav-toggle-container {
   display: flex;
   align-items: center;
+  gap: 1rem;
   justify-content: flex-end;
   margin-right: 2rem;
 }
@@ -120,6 +121,23 @@ header i.bi-list {
   color: var(--ucll-color);
 }
 
+/* Connect button styles */
+.connect-btn {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: white;
+  color: var(--ucll-color);
+}
+
 /* Media Queries for Header */
 @media (max-width: 1000px) {
   header {
@@ -147,37 +165,46 @@ header i.bi-list {
     padding: 0.5rem 0;
   }
 
-  header .logo-container {
-    width: 50%;
+  .logo-container {
+    flex: 0 0 auto;
+    margin-left: 1rem;
   }
 
-  header .nav-toggle-container {
-    width: 50%;
-    justify-content: flex-end;
+  .nav-toggle-container {
+    margin-left: auto;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   header i.bi-list {
+    color: white;
+    font-size: 2rem;
     display: block;
+    cursor: pointer;
   }
 
   header .nav-container {
-    order: 3;
     flex-basis: 100%;
-    margin: 0;
+    order: 3;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background-color: var(--ucll-color);
   }
 
   header nav {
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: var(--ucll-color);
     margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   header nav.visible {
-    max-height: 300px;
+    height: auto;
+    opacity: 1;
     padding: 1rem 0;
   }
 
@@ -185,21 +212,27 @@ header i.bi-list {
     display: block;
     text-align: center;
     margin: 1rem 0;
+    padding: 0.5rem 0;
   }
 
   header .logo {
-    margin-left: 1rem;
     height: 45px;
+    margin-left: 0;
+  }
+
+  .user-info {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .connect-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
   }
 
   .lang-switch {
-    margin-right: 0;
-    padding: 0.3rem 0.6rem;
     font-size: 0.9rem;
-  }
-
-  main {
-    padding-top: 80px;
+    padding: 0.3rem 0.6rem;
   }
 }
 
@@ -432,6 +465,7 @@ main h1::after {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 450px; /* Increase minimum height to accommodate longer text */
 }
 
 .feature-card:hover {
@@ -462,13 +496,16 @@ main h1::after {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: auto;
 }
 
-.card-body p {
-  margin: 0 0 1.5rem;
-  line-height: 1.6;
-  color: #333;
-  flex-grow: 1;
+/* Ensure Timer card dynamically adjusts to fit longer text */
+.card-body p[data-translate="timerDescription"] {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin-bottom: 1rem;
 }
 
 .card-btn {
@@ -490,9 +527,28 @@ main h1::after {
   transform: translateY(-2px);
 }
 
+.user-info {
+  color: white;
+  font-weight: 600;
+  margin-right: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-info i {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
   .welcome-section h1 {
     font-size: 1.8rem;
+  }
+  .feature-card {
+    min-height: 300px; /* Increase minimum height to accommodate longer text */
   }
 
   .welcome-section p {
