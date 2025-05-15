@@ -41,21 +41,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial language setup - must be first for translation to work properly
   updateLanguage(currentLang);
-
   // Toggle mobile menu
   if (menuIcon) {
-    menuIcon.addEventListener("click", function () {
+    menuIcon.addEventListener("click", function (e) {
+      e.stopPropagation(); // Prevent event from bubbling
+      const navContainer = document.querySelector(".nav-container");
       navMenu.classList.toggle("visible");
+
+      // Set explicit height for animation
+      if (navMenu.classList.contains("visible")) {
+        navContainer.style.height = navMenu.offsetHeight + "px";
+      } else {
+        navContainer.style.height = "0";
+      }
     });
   }
 
   // Close menu when clicking outside
   document.addEventListener("click", function (e) {
+    const navContainer = document.querySelector(".nav-container");
     if (
       !e.target.closest("header") ||
       e.target.classList.contains("lang-switch")
     ) {
       navMenu.classList.remove("visible");
+      navContainer.style.height = "0";
     }
   });
 

@@ -165,37 +165,46 @@ header i.bi-list {
     padding: 0.5rem 0;
   }
 
-  header .logo-container {
-    width: 50%;
+  .logo-container {
+    flex: 0 0 auto;
+    margin-left: 1rem;
   }
 
-  header .nav-toggle-container {
-    width: 50%;
-    justify-content: flex-end;
+  .nav-toggle-container {
+    margin-left: auto;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   header i.bi-list {
+    color: white;
+    font-size: 2rem;
     display: block;
+    cursor: pointer;
   }
 
   header .nav-container {
-    order: 3;
     flex-basis: 100%;
-    margin: 0;
+    order: 3;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background-color: var(--ucll-color);
   }
 
   header nav {
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: var(--ucll-color);
     margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   header nav.visible {
-    max-height: 300px;
+    height: auto;
+    opacity: 1;
     padding: 1rem 0;
   }
 
@@ -203,21 +212,27 @@ header i.bi-list {
     display: block;
     text-align: center;
     margin: 1rem 0;
+    padding: 0.5rem 0;
   }
 
   header .logo {
-    margin-left: 1rem;
     height: 45px;
+    margin-left: 0;
+  }
+
+  .user-info {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .connect-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
   }
 
   .lang-switch {
-    margin-right: 0;
-    padding: 0.3rem 0.6rem;
     font-size: 0.9rem;
-  }
-
-  main {
-    padding-top: 80px;
+    padding: 0.3rem 0.6rem;
   }
 }
 
