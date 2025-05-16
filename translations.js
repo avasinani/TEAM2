@@ -171,7 +171,7 @@ const translations = {
     routine: "Routine is key",
     useFood: "Healthy food and enough water",
     useFoodDesc:
-    'It might seem tempting to microwave a quick meal when you\'re short on time, but try to avoid it! Healthy eating has been proven to support better studying. So prepare a nutritious meal with plenty of vegetables and choose fruit instead of candy. Need inspiration? Check out these <a href="https://www.bbcgoodfood.com/recipes/collection/student-recipes" target="_blank" rel="noopener noreferrer">student-friendly recipes</a> for easy and healthy meals.',
+      'It might seem tempting to microwave a quick meal when you\'re short on time, but try to avoid it! Healthy eating has been proven to support better studying. So prepare a nutritious meal with plenty of vegetables and choose fruit instead of candy. Need inspiration? Check out these <a href="https://www.bbcgoodfood.com/recipes/collection/student-recipes" target="_blank" rel="noopener noreferrer">student-friendly recipes</a> for easy and healthy meals.',
     routineDesc:
       "The clearer your weekly routine is, the more normal it becomes to study on certain days and times. Then you don't have to drag yourself to the library on willpower alone, but you can use that energy to actually study. Try to adapt your study rhythm to your biorhythm: are you a morning or evening person? Align your study planning with that as much as possible.",
     studyTogether: "Study together",
