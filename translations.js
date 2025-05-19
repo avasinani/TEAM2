@@ -16,15 +16,15 @@ const translations = {
     cookiePolicy: "Cookiebeleid",
     privacyPolicy: "Privacyverklaring",
     terms: "Algemene voorwaarden",
+
     // Activities page
     funActivities: "Leuke activiteiten om te ontspannen",
     shortWalk: "Korte wandeling",
     shortWalkDesc:
-      "Even de frisse lucht in stappen kan een ontspannende manier zijn om je hoofd leeg te maken. Een wandeling van 10 tot 15 minuten helpt je om stress los te laten en je beter te voelen.",
+    'Even de frisse lucht in stappen kan een ontspannende manier zijn om je hoofd leeg te maken.Een wandeling van 10 tot 15 minuten helpt je om stress los te laten en je beter te voelen.Op zoek naar inspiratie? Met apps zoals<a href="https://www.komoot.nl" target="_blank" rel="noopener noreferrer"> Komoot </a>kun je snel leuke wandelroutes in jouw omgeving vinden.',
     creative: "Creatief bezig zijn",
     creativeDesc:
-      "Tekenen, schilderen, knutselen of zelfs schrijven kan een geweldige uitlaatklep zijn voor stress. Het helpt je gedachten te verzetten en je creativiteit te stimuleren.",
-
+    'Tekenen, schilderen, knutselen of zelfs schrijven kan een geweldige uitlaatklep zijn voor stress. Het helpt je gedachten te verzetten en je creativiteit te stimuleren. Op zoek naar begeleiding of inspiratie? Op <a href="https://www.skillshare.com" target="_blank" rel="noopener noreferrer">Skillshare</a> vind je talloze creatieve cursussen – van illustratie tot creatief schrijven.',
 
     // Study tips page
     studyTipsTitle: "Studietips die écht werken!",
@@ -70,13 +70,13 @@ const translations = {
     // Additional activities
     listenMusic: "Luisteren naar muziek",
     listenMusicDesc:
-      "Muziek heeft een grote invloed op onze emoties. Luisteren naar rustgevende muziek of je favoriete nummers kan helpen om spanning te verminderen en je stemming te verbeteren.",
+    'Muziek heeft een grote invloed op onze emoties. Luisteren naar rustgevende muziek of je favoriete nummers kan helpen om spanning te verminderen en je stemming te verbeteren. Op platforms zoals <a href="https://www.spotify.com/nl/" target="_blank" rel="noopener noreferrer">Spotify</a> vind je talloze playlists die perfect zijn om te ontspannen of je te concentreren tijdens het studeren. Wist je dat Spotify ook een voordelig studentenabonnement aanbiedt?',
     stretching: "Stretching of lichte yoga",
     stretchingDesc:
-      "Even je lichaam strekken of een paar yoga-oefeningen doen kan helpen om vastzittende spanning los te laten. Dit zorgt voor een betere doorbloeding en een ontspannen gevoel.",
+    'Even je lichaam strekken of een paar yoga-oefeningen doen kan helpen om vastzittende spanning los te laten. Dit zorgt voor een betere doorbloeding en een ontspannen gevoel. Op YouTube vind je gratis sessies zoals <a href="https://www.youtube.com/user/yogawithadriene" target="_blank" rel="noopener noreferrer">Yoga with Adriene</a>, ideaal voor korte ontspanningsmomenten tijdens het studeren.',
     hydration: "Hydratatie of snackpauze",
     hydrationDesc:
-      "Neem wat water of een gezonde snack om je energie op te laden. Gezonde voeding en voldoende hydratatie helpen je lichaam en geest optimaal te functioneren.",
+    'Neem wat water of een gezonde snack om je energie op te laden. Gezonde voeding en voldoende hydratatie helpen je lichaam en geest optimaal te functioneren. Inspiratie nodig? Bekijk deze <a href="https://www.studentpool.nl/5-gezonde-snack-recepten/" target="_blank" rel="noopener noreferrer">gezonde snackrecepten voor studenten</a> met onder andere yoghurt met fruit, notenmixen en andere voedzame tussendoortjes.',
     // Homepage buttons
     visitPage: "Bekijk pagina",
     // Contact page card
@@ -143,11 +143,10 @@ const translations = {
     funActivities: "Fun activities to relax",
     shortWalk: "Short Walk",
     shortWalkDesc:
-      "Taking a breath of fresh air can be a relaxing way to clear your mind. A 10 to 15-minute walk helps you release stress and feel better.",
+    'Stepping outside for some fresh air can be a relaxing way to clear your mind. A 10 to 15-minute walk helps release stress and makes you feel better. Looking for ideas? With apps like <a href="https://www.komoot.com" target="_blank" rel="noopener noreferrer">Komoot</a>, you can easily discover great walking routes near you.',
     creative: "Being Creative",
     creativeDesc:
-      "Drawing, painting, crafting, or even writing can be a great outlet for stress. It helps you take your mind off things and stimulates your creativity.",
-
+    'Drawing, painting, crafting, or even writing can be a great outlet for stress. It helps you shift your focus and boosts your creativity. Looking for guidance or inspiration? On <a href="https://www.skillshare.com" target="_blank" rel="noopener noreferrer">Skillshare</a>, you’ll find countless creative courses – from illustration to creative writing.',
 
     // Study tips page
     studyTipsTitle: "Study tips that really work!",
@@ -192,13 +191,13 @@ const translations = {
     // Additional activities
     listenMusic: "Listen to music",
     listenMusicDesc:
-      "Music has a big influence on our emotions. Listening to calming music or your favorite songs can help reduce tension and improve your mood.",
+    'Music has a strong impact on our emotions. Listening to calming music or your favorite songs can help reduce stress and boost your mood. Platforms like <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a> offer countless playlists to help you relax or focus while studying. Did you know Spotify also offers a discounted student subscription?',
     stretching: "Stretching or light yoga",
     stretchingDesc:
-      "Stretching your body or doing a few yoga exercises can help release stuck tension. This improves blood circulation and creates a relaxed feeling.",
+    'Stretching your body or doing a few yoga exercises can help release built-up tension. It improves circulation and gives you a more relaxed feeling. On YouTube, you can find free sessions like <a href="https://www.youtube.com/user/yogawithadriene" target="_blank" rel="noopener noreferrer">Yoga with Adriene</a> – perfect for quick relaxation during study breaks.',
     hydration: "Hydration or snack break",
     hydrationDesc:
-      "Take some water or a healthy snack to recharge your energy. Healthy nutrition and sufficient hydration help your body and mind function optimally.",
+    'Grab some water or a healthy snack to recharge your energy. Nutritious food and proper hydration help your body and mind function at their best. Need ideas? Check out these <a href="https://www.healthline.com/nutrition/29-healthy-snacks-for-weight-loss" target="_blank" rel="noopener noreferrer">healthy snack recipes for students</a> featuring options like yogurt with fruit, mixed nuts, and other nourishing snacks.',
     // Homepage buttons
     visitPage: "Visit page",
     // Contact page card
